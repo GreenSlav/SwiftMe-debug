@@ -22,6 +22,10 @@
 		005D01752C3B9F5D004F58F4 /* TopicsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D01742C3B9F5D004F58F4 /* TopicsTableCell.swift */; };
 		00E8B7B92C3C519300DDBC45 /* AddTopicViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E8B7B82C3C519300DDBC45 /* AddTopicViewControllerDelegate.swift */; };
 		00E8B7BB2C3C70E700DDBC45 /* FlashCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E8B7BA2C3C70E700DDBC45 /* FlashCardsViewController.swift */; };
+		68CA656D2C3C909600DF0831 /* FlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA656C2C3C909600DF0831 /* FlashCardView.swift */; };
+		68CA656F2C3C90F700DF0831 /* FlashCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA656E2C3C90F700DF0831 /* FlashCardCell.swift */; };
+		68E1F21F2C3C916C003785FD /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E1F21E2C3C916C003785FD /* CarouselView.swift */; };
+		68EA4CAD2C3C7CBB00537BAF /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA4CAC2C3C7CBB00537BAF /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		005D01742C3B9F5D004F58F4 /* TopicsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsTableCell.swift; sourceTree = "<group>"; };
 		00E8B7B82C3C519300DDBC45 /* AddTopicViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopicViewControllerDelegate.swift; sourceTree = "<group>"; };
 		00E8B7BA2C3C70E700DDBC45 /* FlashCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsViewController.swift; sourceTree = "<group>"; };
+		68CA656C2C3C909600DF0831 /* FlashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardView.swift; sourceTree = "<group>"; };
+		68CA656E2C3C90F700DF0831 /* FlashCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardCell.swift; sourceTree = "<group>"; };
+		68E1F21E2C3C916C003785FD /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		68EA4CAC2C3C7CBB00537BAF /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 				00E8B7BA2C3C70E700DDBC45 /* FlashCardsViewController.swift */,
 				005D01472C3B745C004F58F4 /* MainViewController.swift */,
 				005D016D2C3B789F004F58F4 /* AddTopicViewController.swift */,
+				68EA4CAC2C3C7CBB00537BAF /* CardsViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -122,6 +131,9 @@
 			children = (
 				005D01702C3B8D6B004F58F4 /* PaddedTextField.swift */,
 				005D01742C3B9F5D004F58F4 /* TopicsTableCell.swift */,
+				68CA656C2C3C909600DF0831 /* FlashCardView.swift */,
+				68CA656E2C3C90F700DF0831 /* FlashCardCell.swift */,
+				68E1F21E2C3C916C003785FD /* CarouselView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,9 +214,13 @@
 				005D01672C3B76A1004F58F4 /* FlashCardTopic+CoreDataProperties.swift in Sources */,
 				005D01712C3B8D6B004F58F4 /* PaddedTextField.swift in Sources */,
 				005D01442C3B745C004F58F4 /* AppDelegate.swift in Sources */,
+				68CA656F2C3C90F700DF0831 /* FlashCardCell.swift in Sources */,
+				68E1F21F2C3C916C003785FD /* CarouselView.swift in Sources */,
 				005D016E2C3B789F004F58F4 /* AddTopicViewController.swift in Sources */,
 				005D01752C3B9F5D004F58F4 /* TopicsTableCell.swift in Sources */,
+				68EA4CAD2C3C7CBB00537BAF /* CardsViewController.swift in Sources */,
 				00E8B7BB2C3C70E700DDBC45 /* FlashCardsViewController.swift in Sources */,
+				68CA656D2C3C909600DF0831 /* FlashCardView.swift in Sources */,
 				00E8B7B92C3C519300DDBC45 /* AddTopicViewControllerDelegate.swift in Sources */,
 				005D01732C3B927A004F58F4 /* CoreDataManager.swift in Sources */,
 				005D01462C3B745C004F58F4 /* SceneDelegate.swift in Sources */,

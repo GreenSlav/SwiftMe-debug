@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2sT-cK-sdb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2sT-cK-sdb">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,28 +43,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="8N9-i1-4jz" kind="show" identifier="showFlashCardsViewController" id="4wI-Zs-9rP"/>
+                        <segue destination="yfg-7F-Kah" kind="show" identifier="CardsViewController" id="VhU-3d-kHe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018" y="-127"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="nnH-AG-btb">
-            <objects>
-                <viewController id="8N9-i1-4jz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BCW-BG-wJi">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="E7J-Mt-Zs5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="0dv-KL-hku"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="246-2O-1GI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2230" y="-127"/>
         </scene>
         <!--Add Topic View Controller-->
         <scene sceneID="3Ht-Bm-TKM">
@@ -81,9 +65,99 @@
             </objects>
             <point key="canvasLocation" x="1017.5572519083969" y="704.92957746478874"/>
         </scene>
+        <!--Flash Cards View Controller-->
+        <scene sceneID="0TF-Hf-7h3">
+            <objects>
+                <viewController id="Pc6-FD-wb8" customClass="FlashCardsViewController" customModule="Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lva-9L-cCw" customClass="FlashCardCell" customModule="Cards" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rgo-zM-adR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LeC-ta-zAo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TE1-Y8-W7K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3439" y="-127"/>
+        </scene>
+        <!--Cards View Controller-->
+        <scene sceneID="G0V-qP-Zbc">
+            <objects>
+                <viewController id="yfg-7F-Kah" customClass="CardsViewController" customModule="Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MEt-T4-gMs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xaY-Rp-aTb">
+                                <rect key="frame" x="16" y="161" width="361" height="580"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11t-rd-TcT">
+                                <rect key="frame" x="316" y="103" width="61" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6B3-vE-ZXk"/>
+                                    <constraint firstAttribute="width" constant="61" id="GEW-vU-N8h"/>
+                                </constraints>
+                                <color key="tintColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="plus.app.fill" catalog="system" strokeWidth="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="plusButn:" destination="yfg-7F-Kah" eventType="touchUpInside" id="1Xq-Rb-u6S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5d-Ru-cgB">
+                                <rect key="frame" x="116" y="768" width="161" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <backgroundConfiguration key="background" cornerRadius="20">
+                                        <color key="backgroundColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Pc6-FD-wb8" kind="show" identifier="presentCards" id="RC9-j7-xrD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IHd-XH-95N"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="11t-rd-TcT" firstAttribute="top" secondItem="IHd-XH-95N" secondAttribute="top" id="007-y8-lgj"/>
+                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="xaY-Rp-aTb" secondAttribute="trailing" constant="16" id="Ekq-VA-MYc"/>
+                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="11t-rd-TcT" secondAttribute="trailing" constant="16" id="Lg3-s8-Puw"/>
+                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="11t-rd-TcT" secondAttribute="trailing" constant="16" id="QME-Rm-YSG"/>
+                            <constraint firstItem="t5d-Ru-cgB" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="116" id="RgO-07-bTp"/>
+                            <constraint firstItem="t5d-Ru-cgB" firstAttribute="top" secondItem="xaY-Rp-aTb" secondAttribute="bottom" constant="27" id="RlM-UZ-x3Z"/>
+                            <constraint firstItem="xaY-Rp-aTb" firstAttribute="top" secondItem="11t-rd-TcT" secondAttribute="bottom" constant="8" symbolic="YES" id="SoL-id-sKT"/>
+                            <constraint firstItem="11t-rd-TcT" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="316" id="Ukf-oR-a7w"/>
+                            <constraint firstItem="11t-rd-TcT" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="316" id="VRb-Ci-0VE"/>
+                            <constraint firstItem="t5d-Ru-cgB" firstAttribute="bottom" secondItem="IHd-XH-95N" secondAttribute="bottom" id="XUq-U4-ymc"/>
+                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="11t-rd-TcT" secondAttribute="trailing" constant="16" id="Xm5-h7-sgr"/>
+                            <constraint firstItem="xaY-Rp-aTb" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="16" id="haH-nk-8fi"/>
+                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="t5d-Ru-cgB" secondAttribute="trailing" constant="116" id="hrG-GA-AVe"/>
+                            <constraint firstItem="11t-rd-TcT" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="316" id="m1A-Hw-uCk"/>
+                            <constraint firstItem="t5d-Ru-cgB" firstAttribute="top" secondItem="xaY-Rp-aTb" secondAttribute="bottom" constant="27" id="t0D-2V-HYZ"/>
+                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="11t-rd-TcT" secondAttribute="trailing" constant="16" id="yHG-XI-d3y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="g5R-vk-n83"/>
+                    <connections>
+                        <outlet property="cardsTableView" destination="xaY-Rp-aTb" id="o9I-XK-RuC"/>
+                        <outlet property="startButn" destination="t5d-Ru-cgB" id="Ab1-YZ-2NO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiP-be-SM7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2251" y="-127"/>
+        </scene>
     </scenes>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

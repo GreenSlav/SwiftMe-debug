@@ -49,6 +49,20 @@ class CoreDataManager {
         saveContext()
     }
     
+    func saveAndCreateFlashCard(_ flashCardTopic: FlashCardTopic?, question: String, answer: String){
+        print(flashCardTopic == nil)
+        if flashCardTopic != nil{
+            let flashCard = FlashCard(context: viewContext)
+            flashCard.question = question
+            flashCard.answer = answer
+            flashCardTopic?.addToRelationshipCard(flashCard)
+            
+            saveContext()
+            
+        }
+        
+    }
+    
     func obtainSavedTopics() -> [FlashCardTopic] {
         let topicRequest = FlashCardTopic.fetchRequest()
         
@@ -62,4 +76,15 @@ class CoreDataManager {
         
         saveContext()
     }
+    
+    func deleteFlashCard(_ topic: FlashCardTopic, _ flashCard: FlashCard){
+        topic.removeFromRelationshipCard(flashCard)
+        saveContext()
+    }
+    
+    func obtainCardsByTopic(_ topic: FlashCardTopic?) -> Set<FlashCard>  {
+        return topic?.relationshipCard ?? Set<FlashCard> ()
+    }
+    
+    
 }

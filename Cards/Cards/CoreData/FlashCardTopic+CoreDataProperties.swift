@@ -20,7 +20,7 @@ extension FlashCardTopic {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var relationshipCard: NSSet?
+    @NSManaged public var relationshipCard: Set<FlashCard>?
 
 }
 

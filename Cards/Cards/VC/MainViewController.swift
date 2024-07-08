@@ -67,8 +67,8 @@ class MainViewController: UIViewController {
             }
         }
         
-        if segue.identifier == "showFlashCardsViewController" {
-            if let destinationVC = segue.destination as? FlashCardsViewController,
+        if segue.identifier == "CardsViewController" {
+            if let destinationVC = segue.destination as? CardsViewController,
                let topic = sender as? FlashCardTopic {
                 destinationVC.topic = topic
             }
@@ -140,7 +140,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource, AddTop
             let selectedTopic = dataSource[indexPath.row]
             
             // Переход к FlashCardViewController
-            performSegue(withIdentifier: "showFlashCardsViewController", sender: selectedTopic)
+            performSegue(withIdentifier: "CardsViewController", sender: selectedTopic)
         }
     }
     
