@@ -54,8 +54,8 @@ class CardsViewController: UIViewController,UITextFieldDelegate {
             if let wordInput = alertController.textFields?[0].text, let valueInput = alertController.textFields?[1].text {
 
                 let flashCard = FlashCard(context: self.dataManager.viewContext)
-                flashCard.answer = wordInput
-                flashCard.question = valueInput
+                flashCard.answer = valueInput
+                flashCard.question = wordInput
                 self.dataSourceWords.append(flashCard)
                 self.dataManager.saveAndCreateFlashCard(self.topic, question: wordInput, answer: valueInput)
                 
@@ -108,8 +108,8 @@ extension CardsViewController: UITableViewDelegate,UITableViewDataSource{
         if dataSourceWords.count > 0{
             let model = dataSourceWords[indexPath.row]
             var configuration = cell.defaultContentConfiguration()
-            configuration.text = model.answer
-            configuration.secondaryText = model.question
+            configuration.text = model.question
+            configuration.secondaryText = model.answer
             configuration.textProperties.font = UIFont.boldSystemFont(ofSize: 24)
             configuration.textProperties.color = .systemPink
             configuration.secondaryTextProperties.font = UIFont.boldSystemFont(ofSize: 20)

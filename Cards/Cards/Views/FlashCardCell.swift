@@ -3,20 +3,27 @@ import UIKit
 class FlashCardCell: UICollectionViewCell {
     
     private let flashCardView: FlashCardView
+    let isFake: Bool?
     
     override init(frame: CGRect) {
+        self.isFake = false
         flashCardView = FlashCardView(frame: .zero)
         super.init(frame: frame)
         setupView()
     }
     
     required init?(coder: NSCoder) {
+        self.isFake = true
         flashCardView = FlashCardView(frame: .zero)
         super.init(coder: coder)
         setupView()
     }
     
     private func setupView() {
+        if isFake! {
+                    flashCardView.isHidden = true
+                }
+
         contentView.addSubview(flashCardView)
         flashCardView.translatesAutoresizingMaskIntoConstraints = false
         
