@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2sT-cK-sdb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2sT-cK-sdb">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -90,24 +90,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xaY-Rp-aTb">
-                                <rect key="frame" x="16" y="161" width="361" height="580"/>
+                                <rect key="frame" x="16" y="113" width="361" height="628"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11t-rd-TcT">
-                                <rect key="frame" x="316" y="103" width="61" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="6B3-vE-ZXk"/>
-                                    <constraint firstAttribute="width" constant="61" id="GEW-vU-N8h"/>
+                                    <constraint firstAttribute="height" constant="628" id="MFM-YM-q6V"/>
                                 </constraints>
-                                <color key="tintColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="plus.app.fill" catalog="system" strokeWidth="0.0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="plusButn:" destination="yfg-7F-Kah" eventType="touchUpInside" id="1Xq-Rb-u6S"/>
-                                </connections>
-                            </button>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5d-Ru-cgB">
                                 <rect key="frame" x="116" y="768" width="161" height="50"/>
                                 <state key="normal" title="Button"/>
@@ -126,25 +114,23 @@
                         <viewLayoutGuide key="safeArea" id="IHd-XH-95N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="11t-rd-TcT" firstAttribute="top" secondItem="IHd-XH-95N" secondAttribute="top" id="007-y8-lgj"/>
                             <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="xaY-Rp-aTb" secondAttribute="trailing" constant="16" id="Ekq-VA-MYc"/>
-                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="11t-rd-TcT" secondAttribute="trailing" constant="16" id="Lg3-s8-Puw"/>
-                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="11t-rd-TcT" secondAttribute="trailing" constant="16" id="QME-Rm-YSG"/>
                             <constraint firstItem="t5d-Ru-cgB" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="116" id="RgO-07-bTp"/>
                             <constraint firstItem="t5d-Ru-cgB" firstAttribute="top" secondItem="xaY-Rp-aTb" secondAttribute="bottom" constant="27" id="RlM-UZ-x3Z"/>
-                            <constraint firstItem="xaY-Rp-aTb" firstAttribute="top" secondItem="11t-rd-TcT" secondAttribute="bottom" constant="8" symbolic="YES" id="SoL-id-sKT"/>
-                            <constraint firstItem="11t-rd-TcT" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="316" id="Ukf-oR-a7w"/>
-                            <constraint firstItem="11t-rd-TcT" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="316" id="VRb-Ci-0VE"/>
                             <constraint firstItem="t5d-Ru-cgB" firstAttribute="bottom" secondItem="IHd-XH-95N" secondAttribute="bottom" id="XUq-U4-ymc"/>
-                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="11t-rd-TcT" secondAttribute="trailing" constant="16" id="Xm5-h7-sgr"/>
                             <constraint firstItem="xaY-Rp-aTb" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="16" id="haH-nk-8fi"/>
                             <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="t5d-Ru-cgB" secondAttribute="trailing" constant="116" id="hrG-GA-AVe"/>
-                            <constraint firstItem="11t-rd-TcT" firstAttribute="leading" secondItem="IHd-XH-95N" secondAttribute="leading" constant="316" id="m1A-Hw-uCk"/>
                             <constraint firstItem="t5d-Ru-cgB" firstAttribute="top" secondItem="xaY-Rp-aTb" secondAttribute="bottom" constant="27" id="t0D-2V-HYZ"/>
-                            <constraint firstItem="IHd-XH-95N" firstAttribute="trailing" secondItem="11t-rd-TcT" secondAttribute="trailing" constant="16" id="yHG-XI-d3y"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="g5R-vk-n83"/>
+                    <navigationItem key="navigationItem" id="g5R-vk-n83">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="4Bq-IF-tX7">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                            <connections>
+                                <action selector="plusButn:" destination="yfg-7F-Kah" id="wAm-K4-VaR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cardsTableView" destination="xaY-Rp-aTb" id="o9I-XK-RuC"/>
                         <outlet property="startButn" destination="t5d-Ru-cgB" id="Ab1-YZ-2NO"/>
@@ -152,17 +138,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CiP-be-SM7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2251" y="-127"/>
+            <point key="canvasLocation" x="2249.6183206106871" y="-127.46478873239437"/>
         </scene>
     </scenes>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

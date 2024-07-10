@@ -7,7 +7,7 @@
 
 import UIKit
 
-let cardBackgroundColor: UIColor = .black
+let cardBackgroundColor: UIColor = .systemPink
 
 // Вынес из класса, потому что не дает вызвать метод класса до супер-инициализатора
 func createUILabel(text: String) -> UILabel {
